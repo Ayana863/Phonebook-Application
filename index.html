@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phonebook App</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- favicon image -->
+    <link rel="shortcut icon" href="./image/favicon-Img.png" type="image/x-icon">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container py-5">
+
+        <!-- Header Title-->
+        <h2 class="text-center mb-4 fw-bold">Phonebook Application</h2>
+
+        <!-- Add Contact Card -->
+        <div class="card shadow p-4 mb-4">
+            <h4 class="mb-3">Add New Contact</h4>
+
+            <form id="form">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <input id="name" type="text" class="form-control" placeholder="Full Name">
+                    </div>
+
+                    <div class="col-md-6">
+                        <input id="phoneno" type="text" class="form-control" placeholder="Phone Number">
+                    </div>
+
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary w-100 rounded-3">Add Contact</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="card shadow p-3 mb-4">
+            <input id="searchInput"  type="text" class="form-control" placeholder="Search by name or phone number...">
+        </div>
+
+        <!-- Contact List -->
+        <div class="card shadow p-4">
+            <h4 class="mb-3">All Contacts</h4>
+
+            <table class="table table-hover align-middle">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone Number</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="displayData">
+                  
+                </tbody>
+            </table>
+
+
+        </div>
+
+    </div>
+
+    <!-- js script -->
+    <script src="./script.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

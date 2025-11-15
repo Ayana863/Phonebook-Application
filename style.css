@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(234, 238, 240);
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.form-control {
+    border-radius: 102px;
+    height: 45px;
+}
+
+
+
+table {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+h2 {
+    color: #333;
+}
