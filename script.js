@@ -59,7 +59,7 @@ phonebookForm.addEventListener('submit', async (e) => {
         phonebookForm.reset()
         getContacts()
     } catch (error) {
-        console.log(error)
+         console.error(error);
     }
 })
 
@@ -71,7 +71,7 @@ const getContacts = async () => {
         allContacts = data
         displayContacts(allContacts)
     } catch (error) {
-       console.log(error);
+       console.error(error);
        
     }
 }
@@ -114,8 +114,7 @@ const displayContacts = (contacts) => {
                     getContacts()
                 } 
             } catch (error) {
-                console.log(error)
-                
+                console.error( error)
             }
         })
 
